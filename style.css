@@ -75,3 +75,30 @@ h4 {
   height: 150px;
   margin-top: auto;
 }
+
+/* Säilö, joka pitää kaikki kortit yhdessä */
+#kortit {
+  display: table-row;
+  gap: 20px; /* Asettaa välin korttien väliin */
+  flex-wrap: wrap; /* Varmistaa, että kortit menevät päällekkäin pienillä näytöillä */
+  margin-top: 20px;
+}
+/* Kortin tyylit */
+.card {
+  width: 100%; /* Asettaa korttien leveydeksi noin 48% (kaksi korttia mahtuu riville) */
+  border: 1px solid #c46464; /* Rajaa kortin */
+  border-radius: 8px; /* Pyöristää kortin kulmat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Lisää varjon korttiin */
+  padding: 20px;
+}
+/* Kortin sisältö */
+.card-body {
+  padding: 10px;
+}
+
+/* Responsiivisuus: jos ikkuna on pienempi kuin 768px, kortit menevät päällekkäin */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Asetetaan kortit täyttämään koko rivi mobiililaitteilla */
+  }
+}
