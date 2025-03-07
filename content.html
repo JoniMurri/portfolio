@@ -11,17 +11,48 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="welcome" class="content flex-grow-1 p-4">
-      <!-- 🔸 Etusivu -->
+    <!-- Pääsisältö -->
+    <div class="container mt-5">
       <div id="etusivu" class="content-section">
-        <h1>Tervetuloa!</h1>
-        <p>Moi. Olen Erkki Kalevi ja opiskelen Karelian Ammattikorkeakoulussa</p>
-        <img
-          src="https://images.pexels.com/photos/270366/pexels-photo-270366.jpeg?auto=compress&cs=tinysrgb&w=600"
-          alt="Esimerkkikuva"
-          class="img-fluid"
-          id="omaKuva"
-        />
-      </div>
+        <!-- Kaarrettu kortti -->
+        <div class="card shadow-lg">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="https://images.pexels.com/photos/14936124/pexels-photo-14936124.jpeg?auto=compress&cs=tinysrgb&w=600"
+                alt="Esimerkkikuva"
+                class="img-fluid rounded-start"
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h2 class="card-title">Web-ohjelmointi 1</h2>
+                <p class="card-text">
+                  Tervetuloa! Täällä esittelen tekemiäni Web-ohjelmointi1 tehtäviä sekä omia ratkaisuja tehtäviin.
+                </p>
+                <h2>Ratkaisut</h2>
+          <ul>
+            <li>Tässä layoutissa ei ole käytetty valmiita templateja</li>
+            <li>Ratkaisut tekstinä</li>
+            <li>Linkit githubiin ratkaisujen yhteydessä</li>
+            
+          </ul>
+              <div>
+                <p>Materiaalit</p>
+                <ul>
+                  <li  style="list-style: none; padding: 0;">
+                    <a href="https://www.w3schools.com" target="_blank">W3Schools</a><br>
+                    <a href="https://www.youtube.com" target="_blank">YouTube</a><br>
+                    <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+                  </li>
+                </ul>
+              </div>
+                <p class="card-text">
+                  <small class="text-muted">Päivitetty: Tammikuu 2025</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
   </body>
 </html>
