@@ -15,11 +15,11 @@
       rel="stylesheet"
     />
   </head>
-  <body class="bg-dark">
+  <body class="bg-light">
 <!-- Navigointipalkki -->
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+<nav id="yläpalkki" class="navbar navbar-expand-lg navbar-light bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#" style="color: whitesmoke;">Portfolio</a> <!-- Logo tai nimi -->
+    <a class="navbar-brand" href="#" style="color: whitesmoke;"></a> <!-- Logo tai nimi -->
     
     <!-- Togglaaja - näkyy pienillä näytöillä -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,15 +33,31 @@
           <a class="nav-link active" aria-current="page" href="#" style="color: whitesmoke" >Etusivu</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio" style="color: whitesmoke">Portfolio</a>
+          <a class="nav-link" href="#portfolio" onclick="openNav()" style="color: whitesmoke">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#raportti" style="color: whitesmoke" >Raportti</a>>
+          <a class="nav-link" href="#raportti" style="color: whitesmoke" >Raportti</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#tehtava1" onclick="closeNav()">Tehtävä1</a>
+  <a href="#tehtava2" onclick="closeNav()">Tehtävä2</a>
+  <a href="#tehtava3" onclick="closeNav()">Tehtävä3</a>
+  <a href="#tehtava4" onclick="closeNav()">Tehtävä4</a>
+  <a href="#tehtava5" onclick="closeNav()">Tehtävä5</a>
+</div>
+
+<button onclick="openNav()" id="openSidebarBtn" class="btn btn-dark">
+  ☰
+</button>
+
+
+
 
       <!-- Pääsisältöalue -->
       <main class="main-content">
@@ -53,5 +69,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+      </script>
   </body>
 </html>

@@ -8,3 +8,142 @@
 html {
   scroll-behavior: smooth;
 }
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  right: 60;
+  background-color: #111; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 50px 6px 8px 40px;
+  left: 40px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+#openSidebarBtn {
+  position: fixed;
+  top: 60px; /* Adjust this if you want it lower/higher */
+  left: 0px;
+  z-index: 9999;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+
+/* Enhance card appearance */
+.card {
+  border: none;
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Darker shadow when hovered */
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+}
+
+
+ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Style the links */
+.text-info {
+  color: #17a2b8;
+}
+
+.text-info:hover {
+  text-decoration: underline;
+}
+
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+
+.container {
+  background-color: #c5aaaa;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+
+.content-section {
+  background-color: #c5aaaa;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+
+.img-fluid {
+  border-radius: 10px;
+  height: fit-content;
+  width: fit-conten;
+  max-height: 250px;
+  object-fit: cover; /
+}
