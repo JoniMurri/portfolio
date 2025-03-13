@@ -6,168 +6,477 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body id="portfolio" class="bg-light">
-
     <div id="tehtava1" class="container mt-5">
       <div class="row justify-content-center">
-   
         <div class="col-12 mb-4">
           <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript tehtävä 1</h5>
-            <p class="card-text">Tee sovellus, joka kysyy syötettävän sanan ja tarkistaa, onko se palindromi.</p>
-            <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
-      <p>Tein sovelluksen, joka tarkistaa, onko sana palindromi. Ratkaisussa käytin itse luotua algoritmia, jossa sanaa verrattaan myös sanaa käänettäessä tosin päin ilman valmiita funktioita. Sovellukseen ei ole lisätty graafista käyttöliittymää, vaan se toimii konsolissa. Ratkaisu löytyy <a href="https://github.com/JoniMurri/tehtava2.git">täältä</a>.</p>
-      <p><strong>Mitä tein:</strong> Rakensin sovelluksen, joka kysyy käyttäjältä sanan ja tarkistaa, onko se palindromi.</p>
-      <p><strong>Millä tavalla tein:</strong> Käytin itse tehtyä algoritmia, joka vertaa sanaa ilman valmiita JavaScriptin funktioita, kuten `reverse()`.</p>
-      <p><strong>Miksi tein:</strong> Halusin ymmärtää, miten palindromin tarkistaminen toteutetaan ohjelmoimalla ilman valmiita funktioita.</p>
-      <p><strong>Mitä opin:</strong> Opin, miten vertailla merkkijonojen eri osia ohjelmoinnissa ja ymmärsin syvemmin koodin toiminnan ilman apuohjelmia.</p>
-      <p><strong>Mitä jäi oppimatta:</strong> En vielä ole kokeillut tehokkaampia menetelmiä suurten tietomäärien käsittelemiseen, mutta tämä on hyvä alku.</p>
-      <p><strong>Miten onnistuin:</strong> Suoritus oli onnistunut, mutta olisi pitänyt hieman tarkemmin lukea tehtävän anto.Tämä on nyt tehty tehtävän annon mukaisesti. Eli minulta puuttui tehtävästä käyttäjltä sanan kysyminen. Tämä on nyt korjattu. </p>
-            
-          </div>
-        </div>
-      </div>
-    
+            <div class="card-body">
+              <h5 class="card-title">JavaScript tehtävä 1</h5>
+              <p class="card-text">
+                Tee sovellus, joka kysyy syötettävän sanan ja tarkistaa, onko se
+                palindromi.
+              </p>
+              <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
+              <p>
+                Tein sovelluksen, joka tarkistaa, onko sana palindromi.
+                Ratkaisussa käytin itse luotua algoritmia, jossa sanaa
+                verrattaan myös sanaa käänettäessä tosin päin ilman valmiita
+                funktioita. Sovellukseen ei ole lisätty graafista
+                käyttöliittymää, vaan se toimii konsolissa. Ratkaisu löytyy
+                <a href="https://github.com/JoniMurri/tehtava2.git">täältä</a>.
+              </p>
+              <p>
+                <strong>Mitä tein:</strong> Rakensin sovelluksen, joka kysyy
+                käyttäjältä sanan ja tarkistaa, onko se palindromi.
+              </p>
+              <p>
+                <strong>Millä tavalla tein:</strong> Käytin itse tehtyä
+                algoritmia, joka vertaa sanaa ilman valmiita JavaScriptin
+                funktioita, kuten `reverse()`.
+              </p>
+              <p>
+                <strong>Miksi tein:</strong> Halusin ymmärtää, miten palindromin
+                tarkistaminen toteutetaan ohjelmoimalla ilman valmiita
+                funktioita.
+              </p>
+              <p>
+                <strong>Mitä opin:</strong> Opin, miten vertailla merkkijonojen
+                eri osia ohjelmoinnissa ja ymmärsin syvemmin koodin toiminnan
+                ilman apuohjelmia.
+              </p>
+              <p>
+                <strong>Mitä jäi oppimatta:</strong> En vielä ole kokeillut
+                tehokkaampia menetelmiä suurten tietomäärien käsittelemiseen,
+                mutta tämä on hyvä alku.
+              </p>
+              <p>
+                <strong>Miten onnistuin:</strong> Suoritus oli onnistunut, mutta
+                olisi pitänyt hieman tarkemmin lukea tehtävän anto.Tämä on nyt
+                tehty tehtävän annon mukaisesti. Eli minulta puuttui tehtävästä
+                käyttäjltä sanan kysyminen. Tämä on nyt korjattu.
+              </p>
+              <h6 class="mt-4">Kuvakaappauksia koodista:</h6>
 
-      <!-- Tehtävä 2 Kortti -->
-     
-      <div id="tehtava2" class="col-12 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript tehtävä 2</h5>
-            <p class="card-text">Luo puhelinluettelo, jossa tallennetaan nimi ja puhelinnumero.</p>
-            <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
-            <p>Tein puhelinluettelon, jossa voi lisätä henkilöitä ja heidän puhelinnumeroitaan. Luettelo tallentaa tiedot taulukkoon, ja käyttäjä voi syöttää nimen ja puhelinnumeron lomakkeen kautta. Ratkaisu löytyy <a href="https://github.com/JoniMurri/tehtava3.git">täältä</a>.</p>
-            <p><strong>Mitä tein:</strong> Rakensin puhelinluettelon, jossa käyttäjä voi lisätä henkilön nimen ja puhelinnumeron, ja tiedot tallennetaan taulukkoon.</p>
-            <p><strong>Millä tavalla tein:</strong> Käytin HTML:n lomaketta tietojen syöttämiseen ja JavaScriptin avulla lisäsin tiedot taulukkoon.</p>
-            <p><strong>Miksi tein:</strong> Tavoitteena oli luoda yksinkertainen sovellus, jossa käyttäjä voi lisätä ja tallentaa henkilön tietoja. Tässä opin käyttämään lomakkeita. </p>
-            <p><strong>Mitä opin:</strong> Opin, miten käyttää lomakkeita ja taulukoita dynaamisesti JavaScriptissä sekä tietojen käsittelyä web-sovelluksissa.</p>
-            <p><strong>Mitä jäi oppimatta:</strong> Olisi ollut hyödyllistä oppia, miten tiedot tallennetaan paikallisesti palvelimelle tietokantaan.</p>
-            <p><strong>Miten onnistuin:</strong> Tehtävä onnistui hyvin, mutta tässä olisi kanssa pelkästään palauttaa puhelinnumero sekä antaa kaksi parametriä taulukko ja nimi. Jos tekisin, toisin varmistaisin taas kerran tehtävän annon. funktiossa on kaksi parametriä, mutta palautaa koko objektin .</p>
-            <p><strong>Täydennetty palutteen perusteella:</strong>Täydennetty versio löytyy githubista</p>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <img
+                    src="images/Näyttökuva 2025-03-13 082105.png"
+                    class="img-fluid rounded shadow"
+                    alt="Koodin osa 1"
+                  />
+                </div>
+                <div class="col-md-6 mb-3">
+                  <img
+                    src="images/Näyttökuva 2025-03-13 082535.png"
+                    class="img-fluid rounded shadow"
+                    alt="Koodin osa 2"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
-      <!-- Tehtävä 3 Kortti -->
-      <div id="tehtava3" class="col-12 mb-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title">JavaScript tehtävä 3</h5>
-            <p class="card-text">Luo luokkamäärittely ja periytyminen JavaScriptissä.</p>
-            <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
-            <p>Tein luokkamäärittelyn ja periytymismekanismin, jossa määritellään Urheilija-luokka. Tämä auttoi minua ymmärtämään luokkamäärittelyä. Ratkaisu löytyy <a href="https://github.com/JoniMurri/Urheilu1.git">täältä</a>.</p>
-            <p><strong>Mitä tein:</strong> Rakensin JavaScriptin luokkamäärittelyn ja käytin periytymistä luodakseni erikoistuneita urheilijalajeja, kuten jalkapalloilija ja koripalloilija.</p>
-            <p><strong>Millä tavalla tein:</strong> Käytin ES6-luokkia ja luontitoimintoja periytymisen ja olioiden määrittelyyn.</p>
-            <p><strong>Miksi tein:</strong> Tavoitteena oli oppia olio-ohjelmointia JavaScriptissä ja ymmärtää, miten luokkia voidaan käyttää laajentamiseen ja periytymiseen.</p>
-            <p><strong>Mitä opin:</strong> Opin, miten käyttää JavaScriptin luokkia ja periytymistä rakentaessani yksinkertaisia objekteja ja hallinnoidessani niiden käyttäytymistä.</p>
-            <p><strong>Mitä jäi oppimatta:</strong> En ole vielä tutustunut laajemmin siihen, miten luokkien prototyypit toimivat taustalla.</p>
-            <p><strong>Miten onnistuin:</strong> Olen tyytväinen suortiukseen. Tästä tehtävästä en ole saanut palautetta,mutta luulen sen olevan oikein.</p>
-          </div>
-        </div>
-      </div>
-    
-  
 
-  <!-- Tehtävä 4 Kortti -->
-  <div id="tehtava4" class="col-12 mb-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Tehtävä 4 (jQuery)</h5>
-        <p class="card-text">Kokeile tehdä käyttöliittymä puhelinluetteloon.
-            Tässä vaiheessa tehdään ensin vain taulukko henkilöistä.
-            Luo itsellesi oma tyylimäärittely taulukkoon, jonka otat käyttöön tässä harjoituksessa luomaasi html -sivuun.</p>
-        <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
-        <p>Tein käyttöliittymään puhelinluettelon, jossa voi lisätä, muokata sekä poistaa henkilöitä. <a href="https://github.com/JoniMurri/Puhelinluettelo.git">täältä</a>.</p>
-      <p><strong>Mitä tein:</strong> Rakensin käyttöliittymän puhelinluettelolle, jossa käyttäjä voi lisätä, muokata ja poistaa henkilöiden tietoja.</p>
-      <p><strong>Millä tavalla tein:</strong> Käytin jQueryä ja HTML:ää rakentaakseni taulukon ja lisätäkseni toimintoja, kuten lomakkeen käsittelyn ja tapahtumien hallinnan.</p>
-      <p><strong>Miksi tein:</strong> Halusin oppia, miten jQueryllä voidaan hallita DOM-elementtejä ja käsitellä tapahtumia, kuten painikkeiden klikkauksia ja lomakkeen lähettämistä.</p>
-      <p><strong>Mitä opin:</strong> Opin, kuinka jQueryn avulla voidaan muokata HTML-elementtejä ja käsitellä dynaamisia tapahtumia.</p>
-      <p><strong>Mitä jäi oppimatta:</strong> En vielä kokeillut monimutkaisempia jQuery-toimintoja, kuten animaatioita tai AJAX-pyyntöjä.</p>
-      <p><strong>Miten onnistuin:</strong> Tehtävä onnistui, mutta käyttöliittymä voisi olla selkeämpi ja responsiivisempi. Jos tekisin toisin, käyttäisin enemmän CSS-tyylejä ja mietin tarkemmin, miten parantaa mobiilikäyttöä.</p>
+        <!-- Tehtävä 2 Kortti -->
+
+        <div id="tehtava2" class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript tehtävä 2</h5>
+              <p class="card-text">
+                Luo puhelinluettelo, jossa tallennetaan nimi ja puhelinnumero.
+              </p>
+              <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
+              <p>
+                Tein puhelinluettelon, jossa voi lisätä henkilöitä ja heidän
+                puhelinnumeroitaan. Luettelo tallentaa tiedot taulukkoon, ja
+                käyttäjä voi hakea taulukosta henkilön puhelinnumeroa nimen
+                perusteella. Ratkaisu löytyy
+                <a href="https://github.com/JoniMurri/tehtava3.git">täältä</a>.
+              </p>
+              <p>
+                <strong>Mitä tein:</strong> Rakensin puhelinluettelon, jossa
+                käyttäjä voi lisätä henkilön nimen ja puhelinnumeron, ja tiedot
+                tallennetaan taulukkoon.
+              </p>
+              <p>
+                <strong>Millä tavalla tein:</strong> Tein konsoli sovelluksen,
+                johon rakensin käyttöliittymän switch rakenteella. Rakensin
+                jokaiselle caselle omat funktiot eli seuraavat kysynimi(),
+                etsiHenkilö(), selaaHenkilöt(). Tässä tehtävässä oli pääteemana
+                rakentaa etsiFunktio, jolle annettaan kaksi parametriä taulukko
+                sekä haettavan nimi sekä funktion pitää palauttaa haettavan
+                puhelinnumero. .
+              </p>
+              <p>
+                <strong>Miksi tein:</strong> Tavoitteena oli luoda
+                yksinkertainen sovellus, jossa käyttäjä voi lisätä ja tallentaa
+                henkilön tietoja. Tässä tehtävässä opin lisäämään taulukkoon
+                henkilöitä sekä etsimään taulukosta tietoa ja palauttamaan
+                tietoa.
+              </p>
+              <p>
+                <strong>Mitä opin:</strong> Opin, miten luoda talukoita
+                JavaScriptillä sekä kuinka filter toimii taulukoista tietojen
+                etsimiseen.
+              </p>
+              <p>
+                <strong>Mitä jäi oppimatta:</strong> Olisi ollut hyödyllistä
+                oppia, miten tiedot tallennetaan paikallisesti palvelimelle
+                tietokantaan.
+              </p>
+              <p>
+                <strong>Miten onnistuin:</strong> Tehtävä onnistui hyvin, mutta
+                tässä olisi kanssa pelkästään palauttaa puhelinnumero sekä antaa
+                kaksi parametriä taulukko ja nimi. Jos tekisin, toisin
+                varmistaisin taas kerran tehtävän annon. funktiossa on kaksi
+                parametriä, mutta palautaa koko objektin .
+              </p>
+              <p>
+                <strong>Täydennetty palautteen perusteella:</strong>Täydennetty
+                versio löytyy githubista
+              </p>
+              <h6 class="mt-4">
+                Kuvakaappauksia koodista:
+                <p>Klikkaa isommaksi!</p>
+              </h6>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <a href="images/Käyttöliittymä.png" target="_blank">
+                    <img
+                      src="images/Käyttöliittymä.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <a href="images/jatkoatheht2.png" target="_blank">
+                    <img
+                      src="images/Käyttöliittymä.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <img
+                    src="images/Consoli.png"
+                    class="img-fluid rounded shadow"
+                    alt="Koodin osa 3"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Tehtävä 3 Kortti -->
+        <div id="tehtava3" class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">JavaScript tehtävä 3</h5>
+              <p class="card-text">
+                Luo luokkamäärittely ja periytyminen JavaScriptissä.
+              </p>
+              <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
+              <p>
+                Tein luokkamäärittelyn ja periytymismekanismin, jossa
+                määritellään Urheilija-luokka. Tämä auttoi minua ymmärtämään
+                luokkamäärittelyä. Ratkaisu löytyy
+                <a href="https://github.com/JoniMurri/Urheilu1.git">täältä</a>.
+              </p>
+              <p>
+                <strong>Mitä tein:</strong> Rakensin JavaScriptin
+                luokkamäärittelyn.
+              </p>
+              <p>
+                <strong>Millä tavalla tein:</strong> Käytin ES6-luokkia ja
+                luontitoimintoja periytymisen ja olioiden määrittelyyn.
+              </p>
+              <p>
+                <strong>Miksi tein:</strong> Tavoitteena oli oppia
+                olio-ohjelmointia JavaScriptissä ja ymmärtää, miten luokkia
+                voidaan käyttää laajentamiseen ja periytymiseen.
+              </p>
+              <p>
+                <strong>Mitä opin:</strong> Opin, miten käyttää JavaScriptin
+                luokkia ja periytymistä rakentaessani yksinkertaisia objekteja
+                ja hallinnoidessani niiden käyttäytymistä.
+              </p>
+              <p>
+                <strong>Mitä jäi oppimatta:</strong> En ole vielä tutustunut
+                laajemmin siihen, miten luokkien prototyypit toimivat taustalla.
+              </p>
+              <p>
+                <strong>Miten onnistuin:</strong> Olen tyytväinen suoritukseen.
+                Tästä tehtävästä en ole saanut palautetta,mutta luulen sen
+                olevan oikein.
+              </p>
+              <h6 class="mt-4">
+                Kuvakaappauksia koodista:
+                <p>Klikkaa isommaksi!</p>
+              </h6>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <a href="images/urheilija1.png" target="_blank">
+                    <img
+                      src="images/urheilija1.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <a href="images/ConsoliUrheilija.png" target="_blank">
+                    <img
+                      src="images/ConsoliUrheilija.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tehtävä 4 Kortti -->
+        <div id="tehtava4" class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tehtävä 4 (jQuery)</h5>
+              <p class="card-text">
+                Kokeile tehdä käyttöliittymä puhelinluetteloon. Tässä vaiheessa
+                tehdään ensin vain taulukko henkilöistä. Luo itsellesi oma
+                tyylimäärittely taulukkoon, jonka otat käyttöön tässä
+                harjoituksessa luomaasi html -sivuun.
+              </p>
+              <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
+              <p>
+                Tein käyttöliittymään puhelinluettelon, jossa voi etsiä henkilön
+                nimen perusteella Ajax Get pyynnöllä.
+                <a href="https://github.com/JoniMurri/Puhelinluettelo.git"
+                  >täältä</a
+                >.
+              </p>
+              <p>
+                <strong>Mitä tein:</strong> Rakensin käyttöliittymän
+                puhelinluettelolle, jossa käyttäjä voi selata sekä etsi
+                henkilöiden tietoja.
+              </p>
+              <p>
+                <strong>Millä tavalla tein:</strong> Käytin jQueryä ja HTML:ää
+                rakentaakseni taulukon ja lisätäkseni toimintoja, kuten
+                lomakkeen käsittelyn ja tapahtumien hallinnan.
+              </p>
+              <p>
+                <strong>Miksi tein:</strong> Halusin oppia, miten jQueryllä
+                voidaan hallita DOM-elementtejä ja käsitellä tapahtumia, kuten
+                painikkeiden klikkauksia ja lomakkeen lähettämistä.
+              </p>
+              <p>
+                <strong>Mitä opin:</strong> Opin, kuinka jQueryn avulla voidaan
+                muokata HTML-elementtejä ja käsitellä dynaamisia tapahtumia.
+              </p>
+              <p>
+                <strong>Mitä jäi oppimatta:</strong> En vielä kokeillut
+                monimutkaisempia jQuery-toimintoja.
+              </p>
+              <p>
+                <strong>Miten onnistuin:</strong> Tehtävä onnistui, mutta
+                käyttöliittymä voisi olla selkeämpi ja responsiivisempi. Jos
+                tekisin toisin, käyttäisin enemmän CSS-tyylejä ja mietin
+                tarkemmin, miten parantaa mobiilikäyttöä.
+              </p>
+              <h6 class="mt-4">
+                Kuvakaappauksia koodista:
+                <p>Klikkaa isommaksi!</p>
+              </h6>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <a href="images/index.png" target="_blank">
+                    <img
+                      src="images/index.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <a href="images/puhluettelo.png" target="_blank">
+                    <img
+                      src="images/puhluettelo.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+            </div>
+            <div class="col-md-6 mb-3">
+              <a href="images/puhluettelo2.png" target="_blank">
+                <img
+                  src="images/puhluettelo2.png"
+                  class="img-fluid rounded shadow"
+                />
+              </a>
+        </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tehtävä 5 Kortti -->
+        <div id="tehtava5" class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Tehtävä 5</h5>
+              <p class="card-text">
+                Tehtävä oli lisätä muokkaus -ominaisuus taulukkoon eli lisää
+                sarake muokkaus ja sinne painikkeet joka tietueeseen josta ko.
+                henkilön puhelinnumeroa voidaan muokata. Muokattu puhelinnumero
+                tallennetaan serveriin eli joudut luomaan fetch kutsun jossa
+                käytät http -metodia PUT.
+              </p>
+              <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
+              <p>
+                Tein käyttöliittymään puhelinluettelon jossa voi lisätä, muokata
+                sekä poistaa henkilöitä.
+                <a href="https://github.com/JoniMurri/Puhelinluettelo.git"
+                  >täältä</a
+                >.
+              </p>
+              <p>
+                <strong>Mitä tein:</strong> Lisäsin taulukkoon
+                muokkaus ominaisuuden, jossa käyttäjä voi päivittää henkilön
+                puhelinnumeron.
+              </p>
+              <p>
+                <strong>Millä tavalla tein:</strong> Käytin Fetchiä PUT pyynnön
+                tekemiseen ja tietojen päivittämiseen
+              </p>
+              <p>
+                <strong>Miksi tein:</strong> Halusin oppia, miten asiakaspuolen
+                JavaScript voi kommunikoida palvelimen kanssa, ja erityisesti,
+                miten POST PUT DELETE pyyntöjä voidaan käyttää tietojen
+                päivittämiseen sovelluksissa. Tämä parantaa sovelluksen
+                dynaamisuutta ja vuorovaikutteisuutta.
+              </p>
+              <p>
+                <strong>Mitä opin:</strong> Opin, kuinka Fetch toimii
+                PUT-pyynnöissä, ja miten data voidaan päivittää palvelimelle
+                käyttäen dynaamisia käyttöliittymiä. Opin myös
+                muokkausominaisuuden lisäämisen taulukkoon ja sen
+                vuorovaikutuksen käyttäjän kanssa.
+              </p>
+              <p>
+                <strong>Mitä jäi oppimatta:</strong> Vaikea sanoa. Tässä
+                tehtävässä tuli laajasti sovelluksien perustoimintoja.
+              </p>
+              <p>
+                <strong>Miten onnistuin:</strong> Tehtävä onnistui hyvin, mutta
+                olisin voinut parantaa virheiden käsittelyä ja lisätä selkeämmän
+                käyttäjäpalautteen, jos esimerkiksi syötteet ovat virheellisiä.
+                Jos tekisin toisin, lisäisin myös validaatiot ennen tietojen
+                lähettämistä palvelimelle, jotta vältetään virheelliset tiedot.
+              </p>
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <a href="images/teht5.png" target="_blank">
+                    <img
+                      src="images/teht5.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <a href="images/teht5,2.png" target="_blank">
+                    <img
+                      src="images/teht5,2.png"
+                      class="img-fluid rounded shadow"
+                    />
+                  </a>
+                    
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- raportti -->
+        <div id="raportti" class="col-12 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Raportti</h5>
+
+              <br />
+              <p>
+                <strong>
+                  Kävin viime kesänä helsingin yliopiston kautta Reactin
+                  kurssin</strong
+                >,jossa käytiin enemmän kokonaiskuvaa miten mikäkin toimii. Olin
+                tutustunut aiheeseen pintapuolisesti ja omaksunut vain
+                perustietoja HTML:stä, CSS:stä ja vähän JavaScriptistä. Kurssin
+                edetessä huomasin, kuinka paljon syvemmälle aiheeseen pääsee,
+                kun perehdytään oikeasti koodin rakenteeseen ja sen toimintaan.
+                Osaamiseni on kehittynyt ja osaan tehdä yksinkertaisia
+                web-sivustoja, joilla on vuorovaikutteisuutta ja dynaamista
+                sisältöä. Erityisesti JavaScriptin ja CSS:n syvempi ymmärtäminen
+                on ollut iso askel eteenpäin.
+              </p>
+
+              <p>
+                <strong>Ajankäyttö suhteessa kurssin laajuuteen</strong>
+
+                Kurssi oli laaja ja vaati aikaa. En tiedä tarkkaa tuntimäärää
+                mitä olen tähän kurssiin käyttänyt. Olen päivittäin
+                harjoittelut, sekä olen tehnyt myös omatoimisesti harjoitteita.
+                Tästä kurssista oppi paljon, mutta vaatii vielä paljon työtä
+                jatkossa jos haluaa olla hyvä ohjelmoinnissa. Oppimista tukevat
+                ja häiritsevät tekijät. Minua auttoi oppimisessa oppitunnit,
+                YouTube, codepen, oppimismateriaalit ja itseopiskelutehtävät.
+                Häiritsevä tekijä oli ajoittain se, että luin tehtävien ohjeet
+                väärin tai ymmärsin ne väärin, mikä johti välillä turhautumiseen
+                ja virheellisiin ratkaisuihin. Tunnilla selaimelta selamelle pomppiminen vähän häiritsi keskittymistä. Olisin toivonut selkeämpää opetustapaa, eli oltaisiin pysytty aiheessa mitä käydään läpi ja sen jälkeen vasta perehdytty syvällisemmin jos esimerkiksi jollain on kysymyksiä.
+                <br />
+                <br />
+                <strong>Ohjaus ja tuki kurssilla</strong>
+
+                Sain ohjausta oppitunneilla. Muuten tällä kurssilla en tarvinnut
+                ohjausta.
+                <br />
+                <br />
+                <strong>Kurssin kohokohdat ja kehityskohteet</strong>
+
+                Kurssin kohokohdat olivat käytännön projektit ja koodin
+                kirjoittaminen itse. Se, että pääsin kokeilemaan opittuja
+                taitoja käytännössä, auttoi syventämään ymmärrystäni. Tämän
+                lisäksi kurssilla käsitellyt HTML5, CSS3, ja JavaScriptin
+                perusasiat olivat erittäin hyödyllisiä. Jäin kuitenkin
+                kaipaamaan enemmän esimerkkejä ja syventävää teoriaa erityisesti
+                siitä, miten tehdä sivustoista optimoituja ja responsiivisia
+                kaikille laitteille.
+                <br />
+                <br />
+                <strong>Tulevaisuuden suunnitelmat web-ohjelmointiin</strong>
+
+                Web-ohjelmointi herätti minussa suurta mielenkiintoa, ja haluan
+                ehdottomasti jatkaa tällä polulla. Olen kiinnostunut syventämään
+                osaamistani erityisesti JavaScriptin, Reactin ja
+                back-end-teknologioiden, kuten Node.js:n, parissa. Aion
+                osallistua jatkokursseille ja kehittää osaamistani itsenäisesti
+                projekteilla. Web-ohjelmointi tulee myös olemaan toivottavasti
+                osa tulevaa työuraani, ja haluan hyödyntää oppimiani taitoja
+                tulevissa projekteissani.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-
-<!-- Tehtävä 5 Kortti -->
-<div id="tehtava5" class="col-12 mb-4">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Tehtävä 5</h5>
-        <p class="card-text">Tehtävä oli lisätä muokkaus -ominaisuus taulukkoon eli lisää sarake muokkaus ja sinne painikkeet joka tietueeseen josta ko. henkilön puhelinnumeroa voidaan muokata. Muokattu puhelinnumero tallennetaan serveriin eli joudut luomaan fetch kutsun jossa käytät http -metodia PUT.</p>
-        <p class="mt-3"><strong>Ratkaisun selitys:</strong></p>
-        <p>Tein käyttöliittymään puhelinluettelon jossa voi lisätä, muokata sekä poistaa henkilöitä. <a href="https://github.com/JoniMurri/Puhelinluettelo.git">täältä</a>.</p>
-      <p><strong>Mitä tein:</strong> Lisäsin taulukkoon muokkausominaisuuden, jossa käyttäjä voi päivittää henkilön puhelinnumeron.</p>
-      <p><strong>Millä tavalla tein:</strong> Käytin Fetch API:ta HTTP PUT -pyynnön tekemiseen ja tietojen päivittämiseen</p>
-      <p><strong>Miksi tein:</strong> Halusin oppia, miten asiakaspuolen JavaScript voi kommunikoida palvelimen kanssa, ja erityisesti, miten PUT-pyyntöjä voidaan käyttää tietojen päivittämiseen REST-tyyppisissä sovelluksissa. Tämä parantaa sovelluksen dynaamisuutta ja vuorovaikutteisuutta.</p>
-      <p><strong>Mitä opin:</strong> Opin, kuinka Fetch toimii HTTP PUT -pyynnöissä, ja miten data voidaan päivittää palvelimelle käyttäen dynaamisia käyttöliittymiä. Opin myös muokkausominaisuuden lisäämisen taulukkoon ja sen vuorovaikutuksen käyttäjän kanssa.</p>
-      <p><strong>Mitä jäi oppimatta:</strong> En ole vielä tutustunut siihen, miten toteutetaan virheiden käsittely PUT-pyynnöissä (esim. palvelinvirheet) tai miten voidaan tehdä tehokkaampia tietojen validointeja ennen niiden lähettämistä palvelimelle.</p>
-      <p><strong>Miten onnistuin:</strong> Tehtävä onnistui hyvin, mutta olisin voinut parantaa virheiden käsittelyä ja lisätä selkeämmän käyttäjäpalautteen, jos esimerkiksi syötteet ovat virheellisiä. Jos tekisin toisin, lisäisin myös validaatiot ennen tietojen lähettämistä palvelimelle, jotta vältetään virheelliset tiedot.</p>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>© 2025 Joni Muranen - Portfolio</p>
       </div>
-    </div>
-  </div>
+    </footer>
 
-
-
-<!-- raportti -->
-<div id="raportti" class="col-12 mb-4">
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Raportti</h5>
-
-      <br>
-      <p><strong> Kävin viime kesänä helsingin yliopiston kautta Reactin kurssin</strong>,jossa käytiin enemmän kokonaiskuvaa miten mikäkin toimii. Olin tutustunut aiheeseen pintapuolisesti ja omaksunut vain perustietoja HTML:stä, CSS:stä ja vähän JavaScriptistä. Kurssin edetessä huomasin, kuinka paljon syvemmälle aiheeseen pääsee, kun perehdytään oikeasti koodin rakenteeseen ja sen toimintaan. Osaamiseni on kehittynyt ja osaan tehdä yksinkertaisia web-sivustoja, joilla on vuorovaikutteisuutta ja dynaamista sisältöä. Erityisesti JavaScriptin ja CSS:n syvempi ymmärtäminen on ollut iso askel eteenpäin.</p>
-     
-      <p>
-        <strong>Ajankäyttö suhteessa kurssin laajuuteen</strong>
-
-Kurssi oli laaja ja vaati aikaa. En tiedä tarkkaa tuntimäärää mitä olen tähän kurssiin käyttänyt. Olen päivittäin harjoittelut, sekä olen tehnyt myös omatoimisesti harjoitteita. Tästä kurssista oppi paljon, mutta vaatii vielä paljon työtä jatkossa jos haluaa olla hyvä ohjelmoinnissa.
-
-Oppimista tukevat ja häiritsevät tekijät
-Minua auttoi oppimisessa oppitunnit, YouTube, codepen, oppimismateriaalit ja itseopiskelutehtävät.  Häiritsevä tekijä oli ajoittain se, että luin tehtävien ohjeet väärin tai ymmärsin ne väärin, mikä johti välillä turhautumiseen ja virheellisiin ratkaisuihin. 
-<br>
-<br>
-<strong>Ohjaus ja tuki kurssilla</strong>
-
-Sain ohjausta oppitunneilla. Muuten tällä kurssilla en tarvinnut ohjausta. 
-<br>
-<br>
-<strong>Kurssin kohokohdat ja kehityskohteet</strong>
-
-Kurssin kohokohdat olivat käytännön projektit ja koodin kirjoittaminen itse. Se, että pääsin kokeilemaan opittuja taitoja käytännössä, auttoi syventämään ymmärrystäni. Tämän lisäksi kurssilla käsitellyt HTML5, CSS3, ja JavaScriptin perusasiat olivat erittäin hyödyllisiä. Jäin kuitenkin kaipaamaan enemmän esimerkkejä ja syventävää teoriaa erityisesti siitä, miten tehdä sivustoista optimoituja ja responsiivisia kaikille laitteille.
-<br>
-<br>
-<strong>Tulevaisuuden suunnitelmat web-ohjelmointiin</strong>
-
-Web-ohjelmointi herätti minussa suurta mielenkiintoa, ja haluan ehdottomasti jatkaa tällä polulla. Olen kiinnostunut syventämään osaamistani erityisesti JavaScriptin, Reactin ja back-end-teknologioiden, kuten Node.js:n, parissa. Aion osallistua jatkokursseille ja kehittää osaamistani itsenäisesti projekteilla. Web-ohjelmointi tulee myös olemaan toivottavasti osa tulevaa työuraani, ja haluan hyödyntää oppimiani taitoja tulevissa projekteissani.
-
-
-      </p>
-  </div>
-</div>
-</div>
-</div>
-</div>
-
-
-
-
-
-<!-- Footer -->
-<footer class="footer bg-dark text-white py-4">
-  <div class="container text-center">
-    <p>© 2025 Joni Muranen - Portfolio</p>
-  </div>
-</footer>
-
-<!-- Bootstrapin JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrapin JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
